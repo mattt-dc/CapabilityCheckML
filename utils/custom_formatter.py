@@ -6,8 +6,8 @@ class CustomFormatter:
     def __init__(self):
         pass
 
-    def format_for_llm(self, question, llm_api):
-        formatted_prompt = f"ChatML\n\nsystem\n{CustomFormatter.SYSTEM_MESSAGE}\nuser\n{question.Content}\nassistant\n"
+    def format_for_llm(self, question):
+        formatted_prompt = f"ChatML\n\nsystem\n{CustomFormatter.SYSTEM_MESSAGE}\nuser\n{question['content']}\nassistant\n"
 
         json_data = {
             "prompt": formatted_prompt,

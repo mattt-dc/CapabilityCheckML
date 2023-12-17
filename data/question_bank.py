@@ -1,7 +1,7 @@
 import json
 
 class QuestionBank:
-    def __init__(self, filepath='questions/questions.json'):
+    def __init__(self, filepath='data/questions/questions.json'):
         self.filepath = filepath
 
     def load_questions(self):
