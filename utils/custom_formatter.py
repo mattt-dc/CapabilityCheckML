@@ -19,4 +19,4 @@ class CustomFormatter:
             "repetition_penalty": 1.1
         }
 
-        return json.dumps(json_data, indent=2)
+        return json_data
