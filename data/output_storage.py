@@ -7,7 +7,7 @@ class OutputStorage:
         result = {
             "llm_api": llm_api,
             "question": question,
-            "response": response.json() if response else None
+            "response": response if response else None
         }
         self.results.append(result)
 

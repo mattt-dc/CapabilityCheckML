@@ -1,3 +1,5 @@
+import argparse
+
 from apis.api_handler import API_Handler
 from data.question_bank import QuestionBank
 from data.output_storage import OutputStorage
@@ -5,6 +7,10 @@ from utils.custom_formatter import CustomFormatter
 from analysis.output_analyzer import OutputAnalyzer
 
 def main():
+    parser = argparse.ArgumentParser(description='Process model name.')
+    parser.add_argument('--model_name', type=str, default='Model', help='The name of the model')
+    args = parser.parse_args()
+
     api_handler = API_Handler()
     question_bank = QuestionBank()
     output_storage = OutputStorage()
@@ -18,7 +24,7 @@ def main():
 
         response = api_handler.send_question(formatted_question)
 
-        output_storage.store_result(llm_api, question, response)
+        output_storage.store_result(args.model_name, question, response)
 
     analysis_results = output_analyzer.analyze_output(output_storage.get_all_output())
 
