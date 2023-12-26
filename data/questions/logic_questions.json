@@ -1,0 +1,25 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "content": "Concatenate the following strings: 'AA' and 'BB'.",
+        "category": "Logic",
+        "answer": "AABB",
+        "answer_logic": "Contains"
+      },
+      {
+        "id": 3,
+        "content": "Replace 'cat' with 'dog' in the sentence: 'The cat sat on the mat.'",
+        "category": "Logic",
+        "answer": "The dog sat on the mat.",
+        "answer_logic": "Contains"
+      },
+      {
+        "id": 9,
+        "content": "How many times does the letter 'a' appear in 'banana'?",
+        "category": "Logic",
+        "answer": "3",
+        "answer_logic": "Contains"
+      }      
+    ]
+  }  

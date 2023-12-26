@@ -1,5 +1,3 @@
-import json
-
 class CustomFormatter:
     SYSTEM_MESSAGE = "Common sense questions and answers"
 
