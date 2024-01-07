@@ -10,8 +10,9 @@ CapabilityCheckML is a Python project designed for benchmarking various machine 
 - **Comprehensive Analysis:** The project includes tools for analyzing the responses, comparing them against expected outputs to evaluate the accuracy and efficiency of the ML models.
 
 ## Getting Started
-If using text-generation-webui, use the --api flag to start with api support. e.g add to cmd_linux.sh for linux.
-Then run with:
+1. If using pip, install dependencies by running: ```pip install -r requirements.txt```
+2. If using text-generation-webui, use the --api flag to start with api support. e.g add to cmd_linux.sh for linux.
+3. Then run with:
 ```python main.py```
 
 ## Project Structure
