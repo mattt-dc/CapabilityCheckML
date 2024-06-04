@@ -11,7 +11,7 @@ CapabilityCheckML is a Python project designed for benchmarking various machine 
 
 ## Getting Started
 1. If using pip, install dependencies by running: ```pip install -r requirements.txt```
-2. If using text-generation-webui, use the --api flag to start with api support. e.g add to cmd_linux.sh for linux.
+2. If using text-generation-webui, use the --api flag in CMD_FLAGS.sh to start with api support.
 3. Then run with:
 ```python main.py```
 
