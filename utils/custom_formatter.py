@@ -9,7 +9,7 @@ class CustomFormatter:
 
         json_data = {
             "prompt": formatted_prompt,
-            "max_new_tokens": 128,
+            "max_tokens": 4096,
             "do_sample": True,
             "temperature": 0.7,
             "top_p": 0.95,

@@ -49,5 +49,7 @@ class OutputAnalyzer:
             
             # If all tokens in the expected answer have a match, return True
             return True
+        elif answer_logic == "ContainsExact":
+            return expected_answer in response
 
         return False
